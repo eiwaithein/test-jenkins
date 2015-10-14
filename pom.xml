@@ -3,7 +3,10 @@
   <groupId>com.example.tribaladmin.testandroidproject</groupId>
   <artifactId>TestAndroidProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
+<pluginManagement>
+      <!-- NOTE: These plugins will be removed from future versions of the super POM -->
+      <!-- They are kept for the moment as they are very unlikely to conflict with lifecycle mappings (MNG-4453) -->
+      <plugins>
   <plugin>
    <groupId>org.codehaus.mojo</groupId>
    <artifactId>findbugs-maven-plugin</artifactId>
@@ -14,4 +17,6 @@
       <xmlOutput>true</xmlOutput>
    </configuration>
 </plugin>
+</plugins>
+</pluginManagement>
   </project>
