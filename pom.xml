@@ -3,35 +3,35 @@
   <groupId>com.example.tribaladmin.testandroidproject</groupId>
   <artifactId>TestAndroidProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-      <!-- NOTE: These plugins will be removed from future versions of the super POM -->
-      <!-- They are kept for the moment as they are very unlikely to conflict with lifecycle mappings (MNG-4453) -->
-     <build>
+	  <!-- NOTE: These plugins will be removed from future versions of the super POM -->
+	  <!-- They are kept for the moment as they are very unlikely to conflict with lifecycle mappings (MNG-4453) -->
+	 <build>
    <plugins>
   <plugin>
    <groupId>org.codehaus.mojo</groupId>
    <artifactId>findbugs-maven-plugin</artifactId>
    <version>2.5.2</version>
    <configuration>
-      <findbugsXmlOutput>true</findbugsXmlOutput>
-      <effort>Max</effort>
-      <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
-      <xmlOutput>true</xmlOutput>
-      <!-- Configures the directory in which the XML report is created -->
-      <findbugsXmlOutputDirectory>${project.build.directory}/findbugs</findbugsXmlOutputDirectory>
+	  <findbugsXmlOutput>true</findbugsXmlOutput>
+	  <effort>Max</effort>
+	  <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+	  <xmlOutput>true</xmlOutput>
+	  <!-- Configures the directory in which the XML report is created -->
+	  <findbugsXmlOutputDirectory>${project.build.directory}/findbugs</findbugsXmlOutputDirectory>
    </configuration>
    <executions>
-                <!--
-                    Ensures that FindBugs inspects source code when project is compiled.
-                -->
-                <execution>
-                    <id>analyze-compile</id>
-                    <phase>compile</phase>
-                    <goals>
-                        <goal>check</goal>
-                    </goals>
-                </execution>
-            </executions>
+				<!--
+					Ensures that FindBugs inspects source code when project is compiled.
+				-->
+				<execution>
+					<id>analyze-compile</id>
+					<phase>compile</phase>
+					<goals>
+						<goal>check</goal>
+					</goals>
+				</execution>
+			</executions>
 </plugin>
 </plugins>
-</reporting>
-  <build>
+  </build>
+</project>
