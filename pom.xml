@@ -5,6 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
       <!-- NOTE: These plugins will be removed from future versions of the super POM -->
       <!-- They are kept for the moment as they are very unlikely to conflict with lifecycle mappings (MNG-4453) -->
+      <build>
    <plugins>
   <plugin>
    <groupId>org.codehaus.mojo</groupId>
@@ -17,4 +18,5 @@
    </configuration>
 </plugin>
 </plugins>
+</build>
   </project>
