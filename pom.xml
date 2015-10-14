@@ -3,4 +3,15 @@
   <groupId>com.example.tribaladmin.testandroidproject</groupId>
   <artifactId>TestAndroidProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+  <plugin>
+   <groupId>org.codehaus.mojo</groupId>
+   <artifactId>findbugs-maven-plugin</artifactId>
+   <version>1.2</version>
+   <configuration>
+      <findbugsXmlOutput>true</findbugsXmlOutput>
+      <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+      <xmlOutput>true</xmlOutput>
+   </configuration>
+</plugin>
   </project>
